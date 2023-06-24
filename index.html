@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaching Management System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.7.0/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        window.onscroll = function () {
+            var element = document.getElementById('my-element');
+            var contain = document.getElementById('sec-element');
+            var scrollPosition = window.scrollY;
+
+            if (scrollPosition > 10) { // Adjust the scroll position threshold as needed
+                element.classList.add('bg-info'); // Add the Bootstrap class dynamically
+            } else {
+                element.classList.remove('bg-info'); // Remove the Bootstrap class if not scrolled enough
+                element.classList.remove('container'); // Remove the Bootstrap class if not scrolled enough
+            }
+        };
+    </script>
+
+</head>
+
+<body class="">
+    <section class="sec-img ">
+        <div class=" ">
+            <header class="sticky-top">
+                <nav id="my-element" class=" navbar nav-underline navbar-expand-lg bg-body-transparent d-flex justify-content-between ">
+                    <div class="container">
+                        <div class="container-fluid ">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <a class="navbar-brand" href="#">Navbar scroll</a>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarScroll" aria-controls="navbarScroll"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                </div>
+                                <div class="collapse navbar-collapse" id="navbarScroll">
+
+
+                                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+                                        style="--bs-scroll-height: 100px;">
+                                        <li class="nav-item mx-4">
+                                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item  mx-4">
+                                            <a class="nav-link" href="#">About</a>
+                                        </li>
+                                        <li class="nav-item dropdown mx-4">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Article
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item mx-4">
+                                            <a class="nav-link disabled">Contact</a>
+                                        </li>
+                                        <li class="nav-item mx-4">
+                                            <a class="nav-link disabled">FAQ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main class=" ">
+                <div class="container">
+                    <!-- first-section  -->
+                    <div class="row  py-5 mx-auto ">
+                        <div class=" col-sm-12  col-md-6    my-auto">
+                            <p>KNOWLEDGE BASE</p>
+                            <h1>
+                                We offer premium support and
+                                efficient solutions
+                            </h1>
+                            <form class="d-flex mt-5" role="search">
+                                <input class="form-control me-2 py-3 rounded-5 " type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-success rounded-5" type="submit">Search</button>
+                            </form>
+                            <div class="my-5">
+                                <button type="button" class="btn btn-info btn-lg px-5 rounded-4 ">Create a
+                                    ticket</button>
+                            </div>
+                        </div>
+                        <div class=" col-sm-12 col-md-6  ">
+                            <img class="img-fluid" src="./images/lovepik-man-sitting-at-work-in-front-of-computer-png-image_401482908_wh1200-removebg-preview.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <!-- second-section -->
+                    <div class="my-5 ">
+                        <div class="row row-cols-lg-3 row-cols-md-1 g-4">
+                            <div class="col">
+                                <div class="card shadow mb-3 p-5">
+                                    <div class="card-header bg-transparent border-success p-5 text-center"><i
+                                            class="fa-solid fa-screwdriver-wrench fa-beat fa-2xl"></i></div>
+                                    <div class="card-body text-success">
+                                        <h5 class="card-title">Help and Documentation</h5>
+                                        <p class="card-text">Unlike other Frameworks which try to cover everything, It
+                                            has
+                                            been built specifically for WordPress and blog websites</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-success">Show more</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow mb-3 p-5">
+                                    <div class="card-header bg-transparent border-success p-5 text-center"><i
+                                            class="fa-solid fa-comments fa-beat fa-2xl"></i></div>
+                                    <div class="card-body text-success">
+                                        <h5 class="card-title">Community and Support</h5>
+                                        <p class="card-text">Unlike other Frameworks which try to cover everything, It
+                                            has
+                                            been built specifically for WordPress and blog websites</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-success">Show more</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow mb-3 p-5">
+                                    <div class="card-header bg-transparent border-success p-5 text-center"><i
+                                            class="fa-solid fa-laptop-code fa-beat fa-2xl"></i></div>
+                                    <div class="card-body text-success">
+                                        <h5 class="card-title">Developer and Resources</h5>
+                                        <p class="card-text">Unlike other Frameworks which try to cover everything, It
+                                            has
+                                            been built specifically for WordPress and blog websites.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-success">Show more</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- third-section -->
+                    <div class="py-5">
+                        <div>
+                            <h4>NO SOLUTION FOUND?</h4>
+                            <p>Easily create Documentation, Knowledge-base, FAQ, Forum and more</p>
+                        </div>
+                        <div class="row row-cols-md-2 third-sec row-cols-xs-1 g-5 ">
+                            <div class="col">
+                                <div class="card mb-3 shadow">
+                                    <div class="row g-0">
+
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Knowledge Base</h5>
+                                                <p class="card-text">Professionally cultivate one-to-one find a customer
+                                                    service with robust ideas..</p>
+                                                <button type="button" class="btn btn-info p-2 rounded-4">Go to help
+                                                    page</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="./images/note (1).png" class="img-fluid rounded-start w-75" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card mb-3 shadow">
+                                    <div class="row g-0">
+
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Live Chat</h5>
+                                                <p class="card-text">Professionally cultivate one-to-one find a customer
+                                                    service with robust ideas.</p>
+                                                <button type="button" class="btn btn-info p-2 rounded-4 ">Go to live
+                                                    chat</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <img src="./images/live.png" class="img-fluid rounded-start w-75" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fourth-section -->
+
+                    <div class="container py-5">
+                        <h4>SUPPORT OUR PRODUCT</h4>
+                        <div class=" row  row-cols-lg-4 fourth-sec   g-4  ">
+
+<div class="col">
+    <div class="card text-bg-warning mb-3">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+            <h5 class="card-title">Warning card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up
+                the bulk of the card's content.</p>
+        </div>
+    </div>
+</div>
+<div class="col">
+    <div class="card text-bg-info mb-3">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+            <h5 class="card-title">Info card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up
+                the bulk of the card's content.</p>
+        </div>
+    </div>
+</div>
+<div class="col">
+    <div class="card text-bg-light mb-3">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+            <h5 class="card-title">Light card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up
+                the bulk of the card's content.</p>
+        </div>
+    </div>
+</div>
+<div class="col">
+    <div class="card text-bg-dark mb-3">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+            <h5 class="card-title">Dark card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up
+                the bulk of the card's content.</p>
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+    <!-- article section -->
+    <div class="container my-5">
+        <div>
+            <h1>Important Article</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        </div>
+        <div class="row g-5 ">
+            <div class="col  ">
+                <div class="accordion accordion-flush border " id="accordionFlushExample">
+                    <div class="accordion-item ">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="accordion accordion-flush border " id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+                    <!-- fifth-section -->
+                    <div class="fifth-sec p-5 ">
+                        <div class="container p-5  bg-white rounded-5 border">
+                            <div class="p-3">
+                                <div>
+                                    <h4>SELECT YOUR PLAN</h4>
+                                    <p>Documentation, Knowledgebase, Forum & more!</p>
+                                </div>
+                                <div class="row fifth-section  row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-5 ">
+                                    <div class="col text-center ">
+                                        <div class="card shadow mb-3 p-5 rounded-5">
+                                            <div class="card-header bg-transparent border-success py-5 text-center">
+                                                <div class="mb-5">
+                                                    <i class="fa-solid fa-screwdriver-wrench fa-beat fa-2xl"></i>
+                                                </div>
+                                                <div>
+                                                    <h5 class="card-title">Basic plan</h5>
+                                                </div>
+                                            </div>
+                                            <div class="card-body text-success">
+
+                                                <ul class="">
+                                                    <li>Phone & Email Support</li>
+                                                    <li>Custom Search</li>
+                                                    <li>99% Happy Customers</li>
+                                                    <li>Internal Knowledge Base</li>
+
+                                                </ul>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-success">
+                                                <h3 class=" "> $ 18/month</h3>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-success"> <button
+                                                    type="button" class="btn btn-info btn-lg my-4 rounded-5  ">Get
+                                                    started</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center  bg-transparent">
+                                        <div class="card shadow mb-3 p-5 rounded-5  bg-info">
+                                            <div class="card-header bg-transparent border-success py-5 text-center">
+                                                <div class="mb-5">
+                                                    <i class="fa-solid fa-screwdriver-wrench fa-beat fa-2xl"></i>
+                                                </div>
+                                                <div>
+                                                    <h5 class="card-title">Basic plan</h5>
+                                                </div>
+                                            </div>
+                                            <div class="card-body text-success">
+
+                                                <ul class="card-text">
+                                                    <li>Phone & Email Support</li>
+                                                    <li>Custom Search</li>
+                                                    <li>99% Happy Customers</li>
+                                                    <li>Internal Knowledge Base</li>
+
+                                                </ul>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-success">
+                                                <h3 class=" "> $ 18/month</h3>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-success"> <button
+                                                    type="button"
+                                                    class="btn btn-outline-dark btn-lg my-4 rounded-5 ">Get
+                                                    started</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center ">
+                                        <div class="card shadow mb-3 p-5 rounded-5">
+                                            <div class="card-header bg-transparent border-success py-5 text-center">
+                                                <div class="mb-5">
+                                                    <i class="fa-solid fa-screwdriver-wrench fa-beat fa-2xl"></i>
+                                                </div>
+                                                <div>
+                                                    <h5 class="card-title">Basic plan</h5>
+                                                </div>
+                                            </div>
+                                            <div class="card-body text-success">
+
+                                                <ul class="card-text">
+                                                    <li>Phone & Email Support</li>
+                                                    <li>Custom Search</li>
+                                                    <li>99% Happy Customers</li>
+                                                    <li>Internal Knowledge Base</li>
+
+                                                </ul>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-success">
+                                                <h3 class=" "> $ 18/month</h3>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-success"> <button
+                                                    type="button" class="btn btn-info btn-lg my-4 rounded-5 ">Get
+                                                    started</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                <!-- sixth-section -->
+                <div class="container py-5 ">
+                    <div class="">
+                        <h4>WHAT PEOPLE SAY</h4>
+                        <p>We care about your opinion</p>
+                    </div>
+                    <div class="row sixth-sec">
+                        <div class=" col-md-12 col-lg-6 d-flex justify-content-center align-items-center ">
+
+                            <div id="carouselExampleCaptions" class="carousel slide  p-4 shadow-lg">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item ">
+
+                                        <div class=" ">
+
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+                                                minus quaerat quam voluptatem suscipit, inventore, tempora qui saepe
+                                                aspernatur ullam, fugit voluptas ut cum et commodi eius odio illum
+                                                repellat voluptates cupiditate dolorem! Deleniti nihil facilis id
+                                                magni ea sed esse, soluta corporis animi? Recusandae consequatur
+                                                quis sit iure quia!</p>
+                                            <div class="card mb-3" style="max-width: 540px;">
+                                                <div class="row g-0">
+                                                    <div class="col-md-4 p-3">
+                                                        <img src="./images/download.png"
+                                                            class="img-fluid rounded-circle" alt="...">
+                                                    </div>
+                                                    <div class="col-md-8 p-1">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Soyeb Bin Taher</h5>
+                                                            <p class="card-text">Junior software engineer
+                                                                <br>
+                                                            <p class="card-text"><small class="text-body-secondary">Z-8
+                                                                    Tech</small></p>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item active">
+
+                                        <div class=" ">
+
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+                                                minus quaerat quam voluptatem suscipit, inventore, tempora qui saepe
+                                                aspernatur ullam, fugit voluptas ut cum et commodi eius odio illum
+                                                repellat voluptates cupiditate dolorem! Deleniti nihil facilis id
+                                                magni ea sed esse, soluta corporis animi? Recusandae consequatur
+                                                quis sit iure quia!</p>
+                                            <div class="card mb-3" style="max-width: 540px;">
+                                                <div class="row g-0">
+                                                    <div class="col-md-4 p-3">
+                                                        <img src="./images/download.png"
+                                                            class="img-fluid rounded-circle" alt="...">
+                                                    </div>
+                                                    <div class="col-md-8 p-1">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Soyeb Bin Taher</h5>
+                                                            <p class="card-text">Junior software engineer
+                                                                <br>
+                                                            <p class="card-text"><small class="text-body-secondary">Z-8
+                                                                    Tech</small></p>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item active">
+
+                                        <div class=" ">
+
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+                                                minus quaerat quam voluptatem suscipit, inventore, tempora qui saepe
+                                                aspernatur ullam, fugit voluptas ut cum et commodi eius odio illum
+                                                repellat voluptates cupiditate dolorem! Deleniti nihil facilis id
+                                                magni ea sed esse, soluta corporis animi? Recusandae consequatur
+                                                quis sit iure quia!</p>
+                                            <div class="card mb-3" style="max-width: 540px;">
+                                                <div class="row g-0">
+                                                    <div class="col-md-4 p-3">
+                                                        <img src="./images/download.png"
+                                                            class="img-fluid rounded-circle" alt="...">
+                                                    </div>
+                                                    <div class="col-md-8 p-1">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Soyeb Bin Taher</h5>
+                                                            <p class="card-text">Junior software engineer
+                                                                <br>
+                                                            <p class="card-text"><small class="text-body-secondary">Z-8
+                                                                    Tech</small></p>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <div class=" col-md-12 col-lg-6  d-flex justify-content-center align-items-center">
+                            <div class="">
+                                <img class="img-fluid" src="./images/customer-people-review-vector-illustration-cartoon-flat-happy-man-or-woman-characters-holding-rating-heart-likes-and-stars-reviewing-positive-experience-in-social-media-concept-isolated-on-white-2CB94.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn " data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev"><i class="fa-solid fa-circle-chevron-left fa-2xl"></i></button>
+
+                        <button type="button" class="btn " data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next"><i class="fa-solid fa-circle-chevron-right fa-2xl"></i></button>
+                    </div>
+                </div>
+            </main>
+                <!-- footer -->
+                <footer class="mt-5 ">
+                    <div class=" h-100  text-center pt-5">
+
+                        <div class="bg-transparent footer-img py-5">
+                            <div class="container text-center">
+                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                                    <div class="col  border-right-3">
+                                        <h1>
+                                            CouchMent
+                                        </h1>
+                                    </div>
+                                    <div class="col">
+                                        <h5>Quick Links</h5>
+                                        <ul class="list-unstyled">
+                                            <li>Home</li>
+                                            <li>Teachers</li>
+                                            <li>Students</li>
+                                            <li>Guardians</li>
+                                            <li>Contact</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <h5>Features</h5>
+                                        <ul class="list-unstyled">
+                                            <li>Home</li>
+                                            <li>Teachers</li>
+                                            <li>Students</li>
+                                            <li>Guardians</li>
+                                            <li>Contact</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <h5>Information</h5>
+                                        <ul class="list-unstyled">
+                                            <li>Home</li>
+                                            <li>Teachers</li>
+                                            <li>Students</li>
+                                            <li>Guardians</li>
+                                            <li>Contact</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="py-4">
+            
+                    <p>      &#169 Z-eight Tech All rights reserved</p>
+   
+                        </div>
+                    </div>
+                </footer>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
