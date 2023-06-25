@@ -1,6 +1,6 @@
 
 .sec-img{
-    background-image: url("./images/17973908.jpg");
+    background-image: url("../assets/17973908.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 700px;
@@ -25,12 +25,12 @@
 
   
 .footer-img{
-    background-image: url("./images/17973908.jpg");
+    background-image: url("../assets/17973908.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 .fifth-sec{
-    background-image: url("./images/17973908.jpg");
+    background-image: url("../assets/17973908.jpg");
     background-size: cover;
     background-repeat: no-repeat;   
 }
@@ -42,7 +42,7 @@
     }
     }
 .card-img{
-    background-image: url("./images/17973908.jpg");
+    background-image: url("../assets/17973908.jpg");
 
 }
 .sixth-sec{
