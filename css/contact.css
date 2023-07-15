@@ -3,6 +3,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 70px;
-    padding-top: 70px;
+    /* padding-top: 70px; */
 background-attachment: fixed;
+}
+.footer-img{
+    background-image: url("../assets/17973908.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }

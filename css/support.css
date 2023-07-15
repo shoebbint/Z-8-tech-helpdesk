@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    
+}
+.main{
+    width: 100%;
+}
+.header-bg{
+    background: #dcdcdc;
+    height: 80px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    
+}
+.logo img{
+width: 80px;
+
+/* padding-left:  80px; ; */
+} 
+nav{
+    flex: 1;
+    text-align: right;
+    margin-right: 100px;
+    /* margin-top: 20px; */
+    
+}
+nav ul{
+
+list-style-type : none;
+display: inline-block;
+ 
+
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+   
+}
+nav ul li a{
+    text-decoration: none;
+    
+
+}
+.hov:hover{
+background: #919394;
+padding: 5px;
+border-radius: 20px;
+
+
+}
+/* .dropdown{
+    border: none;
+    outline: none;
+    
+} */
+
+.profile:hover{
+
+    background-color: rgb(4, 106, 4) !important;
+    color: #ffffff !important;
+    border-radius: 15px;
+  
+
+    
+}
+.logout:hover{
+    background-color: rgb(217, 10, 10) !important;
+    color: #ffffff !important;
+    border-radius: 15px;
+}
+
+
+
+/* .form_body{
+    margin-top: 5%;
+    text-align: center;
+    
+    width: 50%;
+    height: 50%;
+    background-color: rgb(100, 93, 91);
+    border-radius: 20px;
+} */
+
+.form__bg{
+   background-color: rgb(225, 225, 225);
+    border-radius: 30px;
+    box-shadow: 12px 12px 22px;
+   
+}
+.bg{
+    background: #bdc3c7;
+  background: -webkit-linear-gradient(to right, #bdc3c7, #2c3e50);
+  background: linear-gradient(to right, #bdc3c7, #2c3e50); 
+    
+
+    
+    
+    width: 100%;
+    height: 100vh;
+  
+}
+.attach{
+    
+        background-color: rgb(2, 116, 255);
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      
+}
+.bg-img{
+    background-image: url("../assets/17973908.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+
+}
+.footer-img{
+    background-image: url("../assets/17973908.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

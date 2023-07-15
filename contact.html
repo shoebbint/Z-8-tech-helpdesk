@@ -13,111 +13,239 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.7.0/css/buttons.dataTables.min.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        window.onscroll = function () {
+            var element = document.getElementById('my-element');
+            var contain = document.getElementById('sec-element');
+            var scrollPosition = window.scrollY;
+
+            if (scrollPosition > 10) { // Adjust the scroll position threshold as needed
+                element.classList.add('bg-info'); // Add the Bootstrap class dynamically
+            } else {
+                element.classList.remove('bg-info'); // Remove the Bootstrap class if not scrolled enough
+                element.classList.remove('container'); // Remove the Bootstrap class if not scrolled enough
+            }
+        };
+    </script>
 </head>
 
 <body class="">
-    <nav id="my-element" class=" navbar nav-underline navbar-expand-lg bg-body-transparent d-flex justify-content-between ">
-        <div class="container">
-            <div class="container-fluid ">
-                <div class="d-flex justify-content-between">
-                    <div>
-                        <a class="navbar-brand" href="#">Navbar scroll</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarScroll" aria-controls="navbarScroll"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarScroll">
+
+    <div class="">
 
 
-                        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
-                            style="--bs-scroll-height: 100px;">
-                            <li class="nav-item mx-4">
-                                <a class="nav-link " aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item  mx-4">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item dropdown mx-4">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Article
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item mx-4">
-                                <a href="contact.html" class="nav-link ">Contact</a>
-                            </li>
-                            <li class="nav-item mx-4">
-                                <a class="nav-link disabled">FAQ</a>
-                            </li>
-                        </ul>
+        <div class="bg-contact">
+            <header id="my-element" class="sticky-top">
+                <nav 
+                    class=" navbar nav-underline navbar-expand-lg bg-body-transparent d-flex justify-content-between ">
+                    <div class="container">
+                        <div class="container-fluid ">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <div class="logo">
+                                        <a class="" href="index.html"><img class="img-fluid w-50"
+                                                src="assets/logo/Z8-tech.jpg" alt="" /></a>
+                                    </div>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarScroll" aria-controls="navbarScroll"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                </div>
+                                <div class="collapse navbar-collapse" id="navbarScroll">
+
+
+                                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+                                        style="--bs-scroll-height: 100px;">
+                                        <li class="nav-item mx-4">
+                                            <a class="nav-link " href="index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item  mx-4">
+                                            <a class="nav-link" href="#">About</a>
+                                        </li>
+                                        <li class="nav-item dropdown mx-4">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Article
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item mx-4">
+                                            <a href="contact.html" aria-current="page"
+                                                class="nav-link active">Contact</a>
+                                        </li>
+                                        <li class="nav-item mx-4">
+                                            <a href="support.html" class="nav-link ">Support</a>
+                                        </li>
+                                        <li class="nav-item mx-4">
+                                            <a href="faq.html" class="nav-link ">FAQ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </nav>
+            </header>
+            <div class=" d-flex justify-content-center align-items-center py-5">
+
+                <h1 class="my-5 py-5">Contact Us</h1>
             </div>
         </div>
-    </nav>
-    <div>
-        <div class="bg-contact d-flex justify-content-center align-items-center ">
-            <h1 class="my-5 py-5">Contact Us</h1>
-        </div>
+
         <div>
-    
+
             <div class="container my-5">
                 <h1 class="text-center">Lets start a conversation</h1>
-                <div class="row row-cols-1 row-cols-md-2 p-5 ">
-                    <div class="col my-auto">
-                        <h2>CONTACT US</h2>
-                        <h1>Get In Touch Using The Form</h1>
-                        <p>
-                            You can stop by our office for a cup of coffee and just use the contact form below for any questions and
-                            inquiries
-                        </p>
-                        <div>
-                            <h4>
-                                <i class="fa-solid fa-location-dot"></i> Bahaddarhat,Chittagong
-                            </h4>
-                            <h4>
-                                <i class="fa-solid fa-phone-volume"></i> +88 01824072334
-                            </h4>
-                            <h4>
-                                <i class="fa-solid fa-envelope"></i> shoebbint@gmail.com
-                            </h4>
+<div>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+        <div class="col">
+            <div class="card shadow-lg mb-3 text-center p-4">
+                <div class="card-body">
+         <div class="p-4">           <i class="fa-solid fa-location-dot fa-2xl"></i></div>
+                  <h2 class="card-title">Address</h2>
+                  <p class="card-text">Bahaddarhat,Chittagong</p>
+                </div>
+              </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg mb-3 text-center p-4">
+                <div class="card-body">
+                    <div class="p-4">
+                        <i class="fa-solid fa-envelope fa-2xl"></i>
+                    </div>
+                  <h2 class="card-title">
+                    Email
+                </h2>
+                  <p class="card-text">shoebbint@gmail.com</p>
+                </div>
+              </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg mb-3 text-center p-4">
+                <div class="card-body">
+                    <div class="p-4">
+                        <i class="fa-solid fa-phone-volume fa-2xl"></i>
+                    </div>
+                  <h2 class="card-title">Phone Number</h2>
+                  <p class="card-text"> +88 01824072334</p>
+                </div>
+              </div>
+        </div>
+
+
+      </div>
+</div>
+                <div class="row row-cols-1 row-cols-md-2 pb-5 ">
+                    <div class="col p-5 ">
+                        <h1 class=" py-4 text-center">Request a phone call</h1>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Firstname" aria-label="Firstname">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Lastname" aria-label="Lastname">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="phone" class="form-control" placeholder="Phone" aria-label="Phone">
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Comments</label>
+                        </div>
+                        <div class="">
+                            <button class="btn btn-info  btn-lg px-5" type="button">Submit</button>
                         </div>
                     </div>
                     <div class="col p-5 ">
+                        <h1 class=" py-4 text-center">Get in Touch</h1>
                         <div class="mb-3">
                             <input type="text" class="form-control" placeholder="Firstname" aria-label="Firstname">
-                          </div>
+                        </div>
                         <div class="mb-3">
                             <input type="text" class="form-control" placeholder="Lastname" aria-label="Lastname">
-                          </div>
+                        </div>
                         <div class="mb-3">
                             <input type="email" class="form-control" placeholder="Email" aria-label="Email">
-                          </div>
+                        </div>
                         <div class="mb-3">
                             <input type="phone" class="form-control" placeholder="Phone" aria-label="Phone">
-                          </div>
-                          <div class="form-floating mb-3">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
                             <label for="floatingTextarea2">Comments</label>
-                          </div>
-                          <div class="">
+                        </div>
+                        <div class="">
                             <button class="btn btn-info  btn-lg px-5" type="button">Submit</button>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <footer class="mt-5 ">
+        <div class=" h-100  text-center pt-5">
+
+            <div class="bg-transparent footer-img py-5">
+                <div class="container text-center">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                        <div class="col  border-right-3">
+                            <h1>
+                                CouchMent
+                            </h1>
+                        </div>
+                        <div class="col">
+                            <h5>Quick Links</h5>
+                            <ul class="list-unstyled">
+                                <li>Home</li>
+                                <li>Teachers</li>
+                                <li>Students</li>
+                                <li>Guardians</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Features</h5>
+                            <ul class="list-unstyled">
+                                <li>Home</li>
+                                <li>Teachers</li>
+                                <li>Students</li>
+                                <li>Guardians</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Information</h5>
+                            <ul class="list-unstyled">
+                                <li>Home</li>
+                                <li>Teachers</li>
+                                <li>Students</li>
+                                <li>Guardians</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="py-4">
+
+        <p>      &#169 Z-eight Tech All rights reserved</p>
+
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

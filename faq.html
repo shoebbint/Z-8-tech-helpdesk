@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>z8tech-Help-Desk | support</title>
+    <!-- style link -->
+    <link rel="stylesheet" href="./css/faq.css" />
+    <!-- bootstrap link -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+    crossorigin="anonymous"
+  />
+    <!-- fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      rel="stylesheet"
+    />
+    <script>
+      window.onscroll = function () {
+          var element = document.getElementById('my-element');
+          var contain = document.getElementById('sec-element');
+          var scrollPosition = window.scrollY;
+
+          if (scrollPosition > 10) { // Adjust the scroll position threshold as needed
+              element.classList.add('bg-info'); // Add the Bootstrap class dynamically
+          } else {
+              element.classList.remove('bg-info'); // Remove the Bootstrap class if not scrolled enough
+              element.classList.remove('container'); // Remove the Bootstrap class if not scrolled enough
+          }
+      };
+  </script>
+  </head>
+  <body class="">
+
+    
+      <!-- header start -->
+      <header id="my-element" class="sticky-top">
+        <nav  class=" navbar nav-underline navbar-expand-lg bg-body-transparent d-flex justify-content-between ">
+            <div class="container">
+                <div class="container-fluid ">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <div class="logo">
+                                <a class="" href="index.html"><img class="img-fluid w-50" src="assets/logo/Z8-tech.jpg" alt="" /></a>
+                              </div>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarScroll" aria-controls="navbarScroll"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarScroll">
+
+
+                            <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+                                style="--bs-scroll-height: 100px;">
+                                <li class="nav-item mx-4">
+                                    <a class="nav-link"  href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item  mx-4">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item dropdown mx-4">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Article
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item mx-4">
+                                    <a href="contact.html" class="nav-link ">Contact</a>
+                                </li>
+                                <li class="nav-item mx-4">
+                                    <a href="support.html" class="nav-link ">Support</a>
+                                </li>
+                                <li class="nav-item mx-4">
+                                    <a href="faq.html" aria-current="page"  class="nav-link active">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+      <!-- header end -->     
+<!--Section: FAQ-->
+<section class="faq-sec bg-img w-75 container shadow-lg p-5 bg-faq mt-5">
+  <h3 class="text-center mb-4 pb-2 text-primary fw-bold">FAQ</h3>
+  <p class="text-center mb-5">
+    Find the answers for the most frequently asked questions below
+  </p>
+
+  <div class="row p-3">
+    <div class="col-md-6 col-lg-4 mb-4">
+      <h6 class="mb-3 text-primary"><i class="far fa-paper-plane text-primary pe-2"></i> A simple
+        question?</h6>
+      <p>
+        <strong><u>Absolutely!</u></strong> We work with top payment companies which guarantees
+        your
+        safety and
+        security. All billing information is stored on our payment processing partner.
+      </p>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4">
+      <h6 class="mb-3 text-primary"><i class="fas fa-pen-alt text-primary pe-2"></i> Can I cancel my subscription anytime?</h6>
+      <p>
+        <strong><u>Yes, it is possible!</u></strong> You can cancel your subscription anytime in
+        your
+        account. Once the subscription is
+        cancelled, you will not be charged next month.
+      </p>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4">
+      <h6 class="mb-3 text-primary"><i class="fas fa-user text-primary pe-2"></i> About Subscription?
+      </h6>
+      <p>
+        Currently, we only offer monthly subscription. You can upgrade or cancel your monthly
+        account at any time with no further obligation.
+      </p>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4">
+      <h6 class="mb-3 text-primary"><i class="fas fa-rocket text-primary pe-2"></i>Can you tell me how to update my payment Information?
+      </h6>
+      <p>
+        <strong><u>Yes!</u></strong> Go to the billing section of your dashboard and update your payment information.
+      </p>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4">
+      <h6 class="mb-3 text-primary"><i class="fas fa-home text-primary pe-2"></i> Is there any refund?
+      </h6>
+      <p><strong><u>Unfortunately no</u>.</strong> We do not issue full or partial refunds for any
+        reason.</p>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4">
+      <h6 class="mb-3 text-primary"><i class="fas fa-book-open text-primary pe-2"></i> Is there any free plan to offer us?would like to know.</h6>
+      <p>
+        Of course! We’re happy to offer a free plan to anyone who wants to try our service.
+      </p>
+    </div>
+  </div>
+</section>
+<!--Section: FAQ end-->
+
+
+      <!-- footer start -->
+      <footer class="mt-5 ">
+        <div class=" h-100  text-center pt-5">
+
+            <div class="bg-transparent footer-img py-5">
+                <div class="container text-center">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                        <div class="col  border-right-3">
+                            <h1>
+                                CouchMent
+                            </h1>
+                        </div>
+                        <div class="col">
+                            <h5>Quick Links</h5>
+                            <ul class="list-unstyled">
+                                <li>Home</li>
+                                <li>Teachers</li>
+                                <li>Students</li>
+                                <li>Guardians</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Features</h5>
+                            <ul class="list-unstyled">
+                                <li>Home</li>
+                                <li>Teachers</li>
+                                <li>Students</li>
+                                <li>Guardians</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Information</h5>
+                            <ul class="list-unstyled">
+                                <li>Home</li>
+                                <li>Teachers</li>
+                                <li>Students</li>
+                                <li>Guardians</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="py-4">
+
+        <p>      &#169 Z-eight Tech All rights reserved</p>
+
+            </div>
+        </div>
+    </footer>
+      <!-- footer end -->
+    </div>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>
