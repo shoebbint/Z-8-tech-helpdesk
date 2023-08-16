@@ -1,13 +1,22 @@
 .bg-contact{
     background-image: url("../assets/17973908.jpg");
-    background-size: cover;
+
     background-repeat: no-repeat;
-    padding-bottom: 70px;
+    background-size: 100% 22%
+
     /* padding-top: 70px; */
-background-attachment: fixed;
+/* background-attachment: fixed; */
+}
+@media screen and (max-width: 480px) {
+    .bg-contact {
+      background-size: 100% 12%;
+    }
 }
 .footer-img{
     background-image: url("../assets/17973908.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+.user-img {
+    width:40px
 }

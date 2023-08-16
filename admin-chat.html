@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Chatbox</title>
+
+  <!-- css links -->
+  <link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/admin-chat.css">
+
+  <!-- fontawesome link -->
+
+  <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
+
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row d-flex">
+      <div class="col-lg-12">
+        <div class="card admin-chat py-5 ">
+          <div id="plist" class="user-list  ">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button class="btn btn-outline-info input-group-text"><i class="fa fa-search p-1"></i></button>
+                <!-- <span class="input-group-text"><i class="fa fa-search p-1"></i></span> -->
+              </div>
+              <input type="text" class="form-control" placeholder="Search conversation...">
+            </div>
+            <ul class="list-unstyled convo-list mt-2 mb-0">
+              <li class="d-flex active">
+                <img src="./assets/images/akib.png" alt="avatar" />
+                <div class="about">
+                  <div class="name">Ifthekhar Akib</div>
+                  <div class="status">
+                    <i class="fa fa-circle offline"></i> left 20 mins ago
+                  </div>
+                </div>
+              </li>
+              <li class="d-flex ">
+                <img src="./assets/images/taher.png" alt="avatar" />
+                <div class="about">
+                  <div class="name">Taher</div>
+                  <div class="status">
+                    <i class="fa fa-circle online"></i> online
+                  </div>
+                </div>
+              </li>
+
+              <li class="d-flex">
+                <img src="./assets/images/hidayet.png" alt="avatar">
+                <div class="about">
+                  <div class="name">Hidayet Ullah</div>
+                  <div class="status"> <i class="fa fa-circle online"></i> online</div>
+                </div>
+              </li>
+              <li class="d-flex">
+                <img src="./assets/images/sajeeb.png" alt="avatar">
+                <div class="about">
+                  <div class="name">Sajeeb Vai</div>
+                  <div class="status"> <i class="fa fa-circle offline"></i> last seen 2 days ago</div>
+                </div>
+              </li>
+              <li class="d-flex">
+                <img src="./assets/images/jawad.png" alt="avatar">
+                <div class="about">
+                  <div class="name">Jawad</div>
+                  <div class="status"> <i class="fa fa-circle online"></i> online</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="chat">
+            <div class="chat-header d-flex">
+              <div class="row">
+                <div class="col-lg-6">
+                  <a href="javascript:void(0);" data-toggle="modal" data-target="#user_info">
+                    <img src="./assets/images/akib.png" alt="avatar">
+                    <div class="chat-about">
+                      <h6 class="mt-1 mb-1">Ifthekhar Akib</h6>
+                      <small>Last seen: 20 mins ago</small>
+                    </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="chat-history">
+              <ul class="mb-3">
+                <li class="me-0">
+                  <div class="message-data d-flex justify-content-end">
+                    <span class="me-2 message-data-time text-center">6:45pm yesterday</span>
+                    <img src="./assets/images/taher.png" alt="avatar" />
+                  </div>
+
+
+                  <div class="message other-message float-right">
+                    Akib, can you lend me some money?
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="message-data mt-5 ">
+                    <span class="message-data-time">10:12am, Today</span>
+                  </div>
+                  <div class="message my-message">lets have a dinner tonight.</div>
+                </li>
+                <li class="py-2">
+                  <div class="message-data">
+                    <span class="message-data-time">10:15 am, Today</span>
+                  </div>
+                  <div class="message my-message">
+                    hey bro..how you doin?
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="chat-message row row-cols-lg-2 ">
+              <div class="col input-group mb-0 d-flex ">
+                <div class="">
+                  <button class="btn btn-outline-info input-group-text">
+                    <i class="fas fa-paper-plane fa-spin p-1"></i>
+                  </button>
+                </div>
+                  <input type="text" class="form-control " placeholder="Enter text here..." />
+              </div>
+              <div class="col d-flex hidden-sm text-right">
+                <a href="javascript:void(0);" class="btn btn-outline-secondary"><i class="fa fa-camera"></i></a>
+                <a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-image"></i></a>
+                <a href="javascript:void(0);" class="btn btn-outline-info"><i class="fa fa-cogs"></i></a>
+                <a href="javascript:void(0);" class="btn btn-outline-warning"><i class="fa fa-question"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

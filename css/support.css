@@ -7,11 +7,7 @@ html{
     margin: 0;
     padding: 0;
 }
-body{
-    height: 100vh;
-    width: 100%;
-    
-}
+
 .main{
     width: 100%;
 }
@@ -25,7 +21,7 @@ body{
     
 }
 .logo img{
-width: 80px;
+/* width: 80px; */
 
 /* padding-left:  80px; ; */
 } 
@@ -75,13 +71,29 @@ border-radius: 20px;
 
     
 }
+.user-img {
+    width:40px
+}
 .logout:hover{
     background-color: rgb(217, 10, 10) !important;
     color: #ffffff !important;
     border-radius: 15px;
 }
 
-
+.form-card{
+    width:60%;
+}
+@media screen and (max-width: 768px) {
+    .form-card{
+        width:80%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .form-card {
+        width:90%;
+    }
+  }
 
 /* .form_body{
     margin-top: 5%;
